@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flappy Bird 3D - Difficulty</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu">
+    <h1>Flappy Bird 3D</h1>
+    <p>Select Difficulty</p>
+    <button class="btn" onclick="startGame('easy')">Easy</button>
+    <button class="btn" onclick="startGame('medium')">Medium</button>
+    <button class="btn" onclick="startGame('hard')">Hard</button>
+  </div>
+
+  <div id="game">
+    <div id="score">0</div>
+    <div id="bird"></div>
+    <div class="cloud" style="width: 120px; height: 60px; top: 100px;"></div>
+    <div class="cloud" style="width: 150px; height: 80px; top: 200px;"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

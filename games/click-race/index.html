@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Click Race</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Click Race</h1>
+  <div class="race-track">
+    <div class="runner playerOne">Player 1</div>
+    <div class="runner playerTwo">Player 2</div>
+  </div>
+
+  <div class="instructions">
+    <p>Player 1: Press <b>A</b></p>
+    <p>Player 2: Press <b>L</b></p>
+  </div>
+
+  <div class="timer" id="timeLeft">Time: 10</div>
+  <div class="winner-message" id="resultMessage"></div>
+
+  <div class="buttons">
+    <button id="startGame">Start</button>
+    <button id="resetGame" disabled>Reset</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

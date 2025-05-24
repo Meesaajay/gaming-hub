@@ -1,0 +1,134 @@
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+ }
+
+    body {
+      background: linear-gradient(to bottom, #87ceeb, #ffffff);
+      font-family: sans-serif;
+      overflow: hidden;
+    }
+
+    #game {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      display: none;
+      perspective: 1000px;
+    }
+
+    #bird {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: yellow;
+      border-radius: 50%;
+      left: 100px;
+      top: 200px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      background-image: radial-gradient(white 20%, yellow 70%);
+      z-index: 10;
+      transition: transform 0.1s;
+    }
+
+    .pipe {
+      position: absolute;
+      width: 70px;
+      background: linear-gradient(to bottom, #2ecc71, #27ae60);
+      border: 3px solid #145a32;
+      box-shadow: 0 0 15px rgba(0, 100, 0, 0.5);
+      z-index: 5;
+    }
+
+    .pipe-top {
+      border-bottom: 10px solid #145a32;
+    }
+
+    .pipe-bottom {
+      border-top: 10px solid #145a32;
+    }
+
+    #score {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2em;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 10px 20px;
+      border-radius: 12px;
+      z-index: 20;
+    }
+
+    #menu {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      background: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      text-align: center;
+    }
+
+    #menu h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background: #2ecc71;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #27ae60;
+    }
+
+    .cloud {
+      position: absolute;
+      background: #fff;
+      border-radius: 50%;
+      opacity: 0.5;
+      animation: cloudmove 60s linear infinite;
+    }
+
+    .cloud::before,
+    .cloud::after {
+      content: '';
+      position: absolute;
+      background: #fff;
+      border-radius: 50%;
+    }
+
+    .cloud::before {
+      width: 80%;
+      height: 80%;
+      top: -20%;
+      left: -40%;
+    }
+
+    .cloud::after {
+      width: 60%;
+      height: 60%;
+      top: 10%;
+      left: 60%;
+    }
+
+    @keyframes cloudmove {
+      0% { left: 100vw; }
+      100% { left: -200px; }
+    }
+  

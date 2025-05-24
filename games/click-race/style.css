@@ -1,0 +1,106 @@
+body {
+  background-color: #1e1e2f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  color: #eee;
+  text-align: center;
+  user-select: none;
+}
+
+h1 {
+  color: #60a5fa;
+  text-shadow: 0 0 6px #3b82f6;
+  margin-bottom: 2rem;
+}
+
+.race-track {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #2a2a3a;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border: 2px solid #444;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 120px;
+  position: relative;
+}
+
+.runner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  left: 0;
+  transition: left 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.playerOne {
+  background-color: #3b82f6;
+  box-shadow: 0 3px 8px #2563eb;
+}
+
+.playerTwo {
+  background-color: #ef4444;
+  box-shadow: 0 3px 8px #dc2626;
+}
+
+.instructions {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #bbb;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.timer {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #60a5fa;
+  text-shadow: 0 0 6px #3b82f6;
+}
+
+.winner-message {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #22c55e;
+  text-shadow: 0 0 8px #22c55e;
+  min-height: 2.5rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+button {
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  user-select: none;
+  transition: background-color 0.25s ease;
+}
+
+button:disabled {
+  background-color: #6b7280;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #2563eb;
+}
