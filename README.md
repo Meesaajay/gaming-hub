@@ -19,6 +19,7 @@ This is a small collection of fun offline games made with HTML, CSS, and JavaScr
 
 - Click Race — test your clicking speed!
 - Flappy Ball — a simple fun ball-jumping game.
+- Keyboard Ninja - a simple game to test typing speed.
 
 More games will be added further ! Stay tuned.
 
