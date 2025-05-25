@@ -4,6 +4,7 @@
   function loadGame(name) {
    if(name === 'click-race') frame.src = './games/click-race/index.html';
    else if(name === 'flappy-ball') frame.src = './games/flappy-ball/index.html';
+   else if(name === 'keyboard-ninja') frame.src = './games/keyboard-ninja/index.html';
    else frame.src = '';
   }
 
